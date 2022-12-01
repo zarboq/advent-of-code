@@ -17,6 +17,7 @@ fn main() {
                 cur_elf_num_of_cals += line.unwrap().trim().parse::<i32>().unwrap();
             }
         }
+        // lazy :)
         top3_arr.sort_by(|a, b| b.cmp(a));
         let sum = top3_arr[0] + top3_arr[1] + top3_arr[2];
         println!("highest cal is: {}", sum);
