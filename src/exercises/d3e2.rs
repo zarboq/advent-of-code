@@ -10,7 +10,9 @@ fn main() {
             let second_line = lines.next().unwrap();
             let third_line = lines.next().unwrap();
             let three_lines: [String; 3] = [line.unwrap(), second_line.unwrap(), third_line.unwrap()];
+            // get badge from 3 lines/rucksacks
             let badge: u16 = get_badge(three_lines);
+            // ASCII calculus
             if badge >= 97 {
                 total_score += badge - 96;
             } else {
