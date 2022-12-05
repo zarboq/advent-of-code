@@ -4,7 +4,7 @@ use std::path::Path;
 use std::collections::HashMap;
 
 fn main() {
-    if let Ok(lines) = read_lines("./src/resources/d2e1") {
+    if let Ok(lines) = read_lines("./src/resources/d2") {
         let mut total_score: u16 = 0;
         let map_points = game_points();
         for line in lines {

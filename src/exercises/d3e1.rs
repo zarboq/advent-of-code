@@ -4,7 +4,7 @@ use std::path::Path;
 use std::collections::HashMap;
 
 fn main() {
-    if let Ok(lines) = read_lines("./src/resources/d3e1") {
+    if let Ok(lines) = read_lines("./src/resources/d3") {
         let mut total_score: u16 = 0;
         for line in lines {
             let present_twice_object: u16 = object_points(line.unwrap()) as u16;

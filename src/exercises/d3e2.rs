@@ -4,7 +4,7 @@ use std::path::Path;
 use std::collections::HashMap;
 
 fn main() {
-    if let Ok(mut lines) = read_lines("./src/resources/d3e1") {
+    if let Ok(mut lines) = read_lines("./src/resources/d3") {
         let mut total_score: u16 = 0;
         while let Some(line) = lines.next() {
             let second_line = lines.next().unwrap();

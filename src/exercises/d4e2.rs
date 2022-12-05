@@ -3,7 +3,7 @@ use std::io::{self, BufRead};
 use std::path::Path;
 
 fn main() {
-    if let Ok(lines) = read_lines("./src/resources/d4e1") {
+    if let Ok(lines) = read_lines("./src/resources/d4") {
         let mut total_score: u16 = 0;
         for line in lines {
             if full_overlap(line.unwrap()) {

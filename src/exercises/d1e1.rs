@@ -3,7 +3,7 @@ use std::io::{self, BufRead};
 use std::path::Path;
 
 fn main() {
-    if let Ok(lines) = read_lines("./src/resources/d1e1") {
+    if let Ok(lines) = read_lines("./src/resources/d1") {
         let mut top_num_of_cals: i32 = 0;
         let mut cur_elf_num_of_cals: i32 = 0;
         for line in lines {
