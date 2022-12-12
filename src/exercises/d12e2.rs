@@ -28,6 +28,7 @@ where
     Ok(io::BufReader::new(file).lines())
 }
 
+// return graph, starting nodes, end node
 fn construct_graph(
     lines: Lines<io::BufReader<File>>,
 ) -> (Graph<char, char>, Vec<NodeIndex>, NodeIndex) {
@@ -56,6 +57,7 @@ fn construct_graph(
             if node_char == 'S' {
                 node_char = 'a';
             }
+            // get all starting points
             if node_char == 'a' {
                 starts.push(node);
             }
